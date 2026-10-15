@@ -20,3 +20,11 @@
     margin-top: 0;
   }
 }
+
+.fa-book,
+.fa-book-open,
+.fa-user,
+.fa-user-secret {
+  margin-right: 0.5rem;
+  color: variables.$secondary-color;
+}
