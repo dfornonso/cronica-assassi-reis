@@ -47,6 +47,8 @@
     align-items: center;
     gap: 1rem;
 
+    background-color: variables.$card-front-background;
+    
     box-shadow: functions.shadow(0.4);
     border-left: 5px solid variables.$primary-color;
 
@@ -82,7 +84,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: variables.$card-background;
+    background-color: variables.$card-back-background;
     transform: rotateY(180deg);
 
     text-align: center;

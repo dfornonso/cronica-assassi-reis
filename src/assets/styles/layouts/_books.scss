@@ -10,7 +10,7 @@
   &__item {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background-color: variables.$card-background;
+    background-color: variables.$card-front-background;
     border-left: 5px solid variables.$primary-color;
     border-radius: 12px;
     box-shadow: functions.shadow();

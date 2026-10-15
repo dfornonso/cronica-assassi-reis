@@ -5,10 +5,13 @@
   &__card {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
-    background-color: variables.$card-background;
+    background-color: variables.$card-front-background;
+    box-shadow: functions.shadow(0.4);
+    border-left: 5px solid variables.$primary-color;
     border-radius: 12px;
     box-shadow: functions.shadow();
     transition: transform 0.3s ease;
+
   }
 
   &__card:hover {
