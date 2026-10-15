@@ -14,12 +14,29 @@
   }
 }
 
+.books__name {
+  margin-top: 1rem;
+  color: variables.$primary-color;
+}
+
 .books__image {
   width: 100%;
   height: 450px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+
+.books__item {
+  padding: 1rem;
+  background-color: variables.$card-background;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  transition: transform 0.3s;
+}
+
+.books__item:hover {
+  transform: translateY(-5px);
 }
 
 .books__grid {
