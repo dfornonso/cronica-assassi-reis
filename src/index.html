@@ -6,29 +6,75 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>La Crònica de l'Assassí de Reis</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+    <div class="hero">
+      <h1 class="hero__title">
+        La Crònica de l'Assassí de Reis
+      </h1>
+
+      <p class="hero__subtitle">
+        La llegenda de Kvothe narrada per ell mateix.
       </p>
     </div>
+
+    <section class="about">
+      <h2 class="about__title">Sobre la saga</h2>
+
+      <p class="about__text">
+        La Crònica de l'Assassí de Reis és una trilogia de fantasia escrita per
+        Patrick Rothfuss. La història segueix les aventures de Kvothe, un músic,
+        mag i aventurer convertit en llegenda.
+      </p>
+    </section>
+
+    <section class="books">
+      <h2 class="books__title">Els llibres</h2>
+
+      <article class="books__item">
+        <h3 class="books__name">El Nom del Vent</h3>
+      </article>
+
+      <article class="books__item">
+        <h3 class="books__name">El Temor d'un Home Savi</h3>
+      </article>
+
+      <article class="books__item">
+        <h3 class="books__name">Les Portes de Pedra</h3>
+      </article>
+    </section>
+
+    <section class="characters">
+      <h2 class="characters__title">Personatges principals</h2>
+
+      <article class="characters__card">
+        <h3 class="characters__name">Kvothe</h3>
+      </article>
+
+      <article class="characters__card">
+        <h3 class="characters__name">Denna</h3>
+      </article>
+
+      <article class="characters__card">
+        <h3 class="characters__name">Bast</h3>
+      </article>
+
+      <article class="characters__card">
+        <h3 class="characters__name">Elodin</h3>
+      </article>
+    </section>
+
+    <section class="reasons">
+      <h2 class="reasons__title">Per què la recomano</h2>
+
+      <ul class="reasons__list">
+        <li>Personatges molt ben desenvolupats.</li>
+        <li>Narració immersiva.</li>
+        <li>Sistema de màgia original.</li>
+        <li>Univers ric i detallat.</li>
+      </ul>
+    </section>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
