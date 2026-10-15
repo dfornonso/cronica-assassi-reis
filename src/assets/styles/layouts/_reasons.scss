@@ -1,9 +1,105 @@
+@use "../variables";
+
 .reasons {
-  &__list {
-    padding-left: 1.5rem;
+  display: grid;
+  gap: 2rem;
+
+  &__title {
+    grid-column: 1 / -1;
   }
 
-  li {
-    margin-bottom: 0.75rem;
+  &__item {
+    perspective: 1000px;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__card {
+    position: relative;
+    display: block;
+    min-height: 200px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+
+  &__toggle:checked + &__card {
+    transform: rotateY(180deg);
+  }
+
+  &__front,
+  &__back {
+    position: absolute;
+    inset: 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  }
+
+  &__front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: rgb(255 255 255 / 40%);
+    border-left: 4px solid variables.$secondary-color;
+
+    font-family: variables.$font-family-serif;
+    font-style: italic;
+    text-align: center;
+  }
+
+  &__front blockquote {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  &__front cite {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    color: variables.$primary-color;
+  }
+
+  &__hint {
+    margin: 0;
+  }
+
+  &__hint i {
+    color: variables.$secondary-color;
+    font-size: 1.25rem;
+  }
+
+  &__back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: variables.$card-background;
+    transform: rotateY(180deg);
+
+    text-align: center;
+  }
+
+  &__back h3 {
+    margin: 0 0 1rem;
+    color: variables.$primary-color;
+  }
+
+  &__back p {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .reasons {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
