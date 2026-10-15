@@ -2,7 +2,7 @@
 @use "../functions";
 
 .hero {
-  min-height: 60vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,14 +25,15 @@
   color: white;
 
   &__title {
-    font-family: variables.$font-family-serif;
+    font-family: variables.$font-family-fantasy;
     font-size: functions.rem(36);
     text-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
   }
 
   
   &__subtitle {
-    font-size: functions.rem(20);
+    font-family: variables.$font-family-fantasy;
+    font-size: functions.rem(25);
   }
 
   &__button {
@@ -53,6 +54,9 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
   .hero__title {
     font-size: functions.rem(48);
   }
