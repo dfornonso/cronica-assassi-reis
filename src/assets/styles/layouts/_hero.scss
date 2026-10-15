@@ -9,20 +9,28 @@
   align-items: center;
   padding: functions.rem(64) functions.rem(32);
   text-align: center;
-  background-color: variables.$primary-color;
-  color: white;
+  max-width: none;
+  width: 100%;
   
+  background:
+  linear-gradient(
+    rgb(90 57 33 / 75%),
+    rgb(43 33 24 / 85%)
+  ),
+  url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
   &__title {
     font-family: variables.$font-family-serif;
     font-size: functions.rem(36);
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
   }
 
-  @media (min-width: 768px) {
-    .hero__title {
-      font-size: functions.rem(48);
-    }
-  }
-
+  
   &__subtitle {
     font-size: functions.rem(20);
   }
@@ -41,5 +49,11 @@
 
   &__button:hover {
     opacity: 0.9;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: functions.rem(48);
   }
 }
