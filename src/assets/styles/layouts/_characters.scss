@@ -1,0 +1,15 @@
+@use "../variables";
+
+.characters {
+  &__card {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: variables.$card-background;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  }
+
+  &__name {
+    color: variables.$primary-color;
+  }
+}

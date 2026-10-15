@@ -1,0 +1,26 @@
+@use "../variables";
+
+.nav {
+  background-color: variables.$primary-color;
+  position: sticky;
+  top: 0;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: variables.$secondary-color;
+  }
+}

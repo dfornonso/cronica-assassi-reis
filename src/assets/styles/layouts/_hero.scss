@@ -1,0 +1,18 @@
+@use "../variables";
+@use "../functions";
+
+.hero {
+  padding: functions.rem(64) functions.rem(32);
+  text-align: center;
+  background-color: variables.$primary-color;
+  color: white;
+
+  &__title {
+    font-family: variables.$font-family-serif;
+    font-size: functions.rem(48);
+  }
+
+  &__subtitle {
+    font-size: functions.rem(20);
+  }
+}
